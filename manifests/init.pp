@@ -4,10 +4,11 @@
 #
 #   include pycharm
 class pycharm {
-  $version = '3.0'
+  $edition = 'community'
+  $version = '3.4.1'
 
   package { 'PyCharm':
     provider => 'appdmg',
-    source   => "http://download.jetbrains.com/python/pycharm-professional-${version}.dmg"
+    source   => "http://download.jetbrains.com/python/pycharm-${edition}-${version}.dmg"
   }
 }
